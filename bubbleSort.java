@@ -1,32 +1,11 @@
-public static void main(String[] args){
-    Scanner sc = new Scanner(System.in);
-    int t = sc.nextInt();
-    while(t>0){
-        int n = sc.nextInt();
-        int arr[] = new int[n];
-        for(int i=0;i<n;i++){
-            import java.util.*;
 
-            Class GFG{
-                arr[i] = sc.nextInt();
+import java.util.*;
 
-            }
 
-            bubbleSort obj = new bubbleSort();
-            obj.bubbleSort1(arr,n);
-
-            for(int i=0;i<n;i++){
-                System.out.println(arr[i]+" ");
-            }
-            System.out.println();
-            t--;
-        }
-    }
-}
 class bubbleSort
 {
     //Function to sort the array using bubble sort algorithm.
-	public static void bubbleSort1(int arr[], int n)
+    public static void bubbleSort1(int arr[], int n)
     {
         //code here
         for(int i = 0 ; i < n-1; i++){
@@ -39,4 +18,20 @@ class bubbleSort
             }
         }
     }
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int arr[] = new int[n];
+        for(int i=0;i<n;i++){
+            arr[i]=sc.nextInt();
+        }
+
+        bubbleSort1(arr,n);
+
+        for(int i=0;i<n;i++){
+            System.out.print(arr[i]+" ");
+        }
+
+    }
 }
+
